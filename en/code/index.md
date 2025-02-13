@@ -8,7 +8,7 @@ Good frontend code is **easily modifiable** code.
 When implementing new requirements, code that is easy to modify and deploy is considered good code.
 You can determine if code is easily modifiable based on four criteria.
 
-## 1. Readability {#1 readability}
+## 1. Readability {#1-readability}
 
 **Readability** refers to how easy it is to read the code.
 For code to be easily modifiable, you must first understand what the code does.
@@ -28,7 +28,7 @@ Readable code has fewer contexts for the reader to consider at once and flows na
   - [Reduce context switching](./examples/user-policy.md)
   - [Simplify ternary operators](./examples/ternary-operator.md)
 
-## 2. Predictability {#2 predictability}
+## 2. Predictability {#-2-predictability}
 
 **Predictability** refers to how well your colleagues can predict the behavior of a function or component.
 Highly predictable code follows consistent rules, allowing one to understand its behavior just by looking at the function or component's name, parameters, and return values.
@@ -39,7 +39,7 @@ Highly predictable code follows consistent rules, allowing one to understand its
 - [Unify return types for similar functions](./examples/use-user.md)
 - [Expose hidden logic](./examples/hidden-logic.md)
 
-## 3. Cohesion {#3 cohesion}
+## 3. Cohesion {#-3-cohesion}
 
 **Cohesion** refers to whether code that needs to be modified is always modified together.
 Highly cohesive code does not cause unintended errors in other parts when one part is modified.
@@ -59,7 +59,7 @@ If the risk is low, prioritize readability by allowing code duplication.
 - [Eliminate magic numbers](./examples/magic-number-cohesion.md)
 - [Consider form cohesion](./examples/form-fields.md)
 
-## 4. Coupling {4 coupling}
+## 4. Coupling {#-4-coupling}
 
 **Coupling** refers to the scope of impact when code is modified.
 Code that is easy to modify has a limited scope of impact, making it easier to predict the range of changes.
@@ -70,7 +70,7 @@ Code that is easy to modify has a limited scope of impact, making it easier to p
 - [Allow code duplication](./examples/use-bottom-sheet.md)
 - [Eliminate Props Drilling](./examples/item-edit-modal.md)
 
-## Viewing Code Quality from Multiple Angles
+## Viewing Code Quality from Multiple Angles {#-viewing-code-quality-from-multiple-angles}
 
 Unfortunately, it is difficult to satisfy all four criteria simultaneously.
 

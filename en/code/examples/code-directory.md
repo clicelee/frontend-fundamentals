@@ -8,7 +8,7 @@ When writing code in a project, you often manage hooks, components, utility func
 
 Placing source files that are modified together in one directory can clearly reveal the code dependencies. This prevents unauthorized references to files that should not be referenced and allows related files to be deleted at once.
 
-## 📝 Code Example
+## 📝 Code Example {#code example}
 
 The following code is a directory structure that categorizes all files in the project by module type (Presentational components, Container components, Hooks, constants, etc.).
 
@@ -24,7 +24,7 @@ The following code is a directory structure that categorizes all files in the pr
    └─ ...
 ```
 
-## 👃 Smell the Code
+## 👃 Smell the Code {#smell the code}
 
 ### Cohesion
 
@@ -33,7 +33,7 @@ Additionally, if a specific component, hook, or utility function is no longer us
 
 As the project grows, the dependencies between code can become significantly more complex, doubling, tenfold, or even a hundredfold. A single directory might end up containing over 100 files.
 
-## ✏️ Work on Improving
+## ✏️ Work on Improving {#work on improving}
 
 The following is an example of improving the structure so that code files that are modified together form a single directory.
 
@@ -69,7 +69,7 @@ If you place code files that are modified together under a single directory, it 
 For example, consider a case where the sub-code of one domain (`Domain1`) references the source code of another domain (`Domain2`).
 
 ```typescript
-import { useFoo } from '../../../Domain2/hooks/useFoo'
+import { useFoo } from "../../../Domain2/hooks/useFoo";
 ```
 
 When you encounter such an import statement, you can easily recognize that the wrong file is being referenced.
